@@ -22,7 +22,7 @@ public class KafkaRestController {
         kafkaTemplate.send("example-topic", message);
         return "Message sent: " + message;
     }
-// new changes updated
+// new changes updated recently
     @KafkaListener(topics = "example-topic")
     public void ConsumeMessage(String message){
         System.out.println("Received Message :" + message);
